@@ -1,8 +1,6 @@
 Meow!
 
-I'm Charlotte Tham, a student currently studying in Dunman High School.
-
-I'm using GitHub for school projects, at least for now.
+I'm Charlotte Tham, a student currently studying in Dunman High School and I'm using GitHub for school projects, at least for now.
 
 I like:
 
