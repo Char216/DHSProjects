@@ -3,4 +3,5 @@
 # Can you fix it? Thank meow!
 
 from microbit import *
-display.show(image.UMBRELLA)
+display.show(Image.UMBRELLA)
+(Changed by Wynne ;)
