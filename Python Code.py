@@ -1,31 +1,49 @@
 print("Title of program: Meow Encouragement")
 print()
-print("Hi there! With this project, you can look at some cute cats and hopefully feel better ฅ^•ﻌ•^ฅ")
-print("Please respond with a number 1 - 5, where 1 is strongly disagree and 5 is strongly agree.")
+print("Hi there! With this project, you can get some advice from a cat and hopefully feel better ฅ^•ﻌ•^ฅ")
 print()
+while True:
+  description = input("Do you need some encouragement, meow?")
 
-kitten1 = input("I like kittens more than grown cats.")
+  list_of_words = description.split()
 
-ginger1 = input("I like ginger-coloured cats.")
+  feelings_list = []
+  encouragement_list = []
+  counter = 0
+  
+  for each_word in list_of_words:
+    
+    if each_word == "Yes" or "yes":
+      feelings_list.append("yes")
+      encouragement_list.append("Are things just not going your way, meow?")
+      counter += 1
+    if each_word == "No" or "no":
+      feelings_list.append("no")
+      encouragement_list.append("That's good, it means you're feeling alright! If you ever need encouragement, just ask meow!")
+      counter += 1
 
-calico1 = input("I like Calico cats.")
+  if counter == 0:
+    
+      output = "Sorry I don't really understand. Please use different words?"
 
-black1 = input("I like black cats.")
+  elif counter == 1:
+    
+      output = encouragement_list[0] 
 
-2 = input("I'm good with tying knots and ropes.")
+  else:
 
-music2 = input("I play a musical instrument well.")
+    feelings = ""    
+    for i in range(len(feelings_list)-1):
+      feelings += feelings_list[i] + ", "
+    feelings += "and " + feelings_list[-1]
+    
+    encouragement = ""    
+    for j in range(len(encouragement_list)-1):
+      encouragement += encouragement_list[i] + ", "
+    encouragement += "and " + encouragement_list[-1]
 
+    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
 
-tech_final = int(tech1) + int(tech2)
-outdoor_final = int(outdoor1) + int(outdoor2)
-music_final = int(music1)+ int(music2)
-
-print()
-
-if tech_final > outdoor_final and tech_final > music_final:
-  print("You might be suitable for Infocomm club!")
-elif outdoor_final > music_final:
-  print("You might be stuiable for ODAC!")
-else:
-  print("You might be suitable for Band!")
+  print()
+  print(output)
+  print()
