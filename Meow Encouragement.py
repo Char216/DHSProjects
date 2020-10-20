@@ -28,7 +28,7 @@ while True:
 
   elif counter == 1:
     
-      output = "It seems that you are feeling quite " + feelings_list[0] + ". Please always remember "+ encouragement_list[0] + " Life can be tough but sometimes all you need is a cuddly cat :)"
+      output = "It seems that you are feeling quite " + feelings_list[0] + ". Please always remember "+ encouragement_list[0] + " Life can be tough (poor humans) but sometimes all you need is a cuddly cat. Stay pawsitive! :)"
 
   else:
 
@@ -42,7 +42,7 @@ while True:
       encouragement += encouragement_list[i] + ", "
     encouragement += "and " + encouragement_list[-1]
 
-    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + " Life can be tough but sometimes all you need is a cuddly cat :)"
+    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + " Life can be tough (poor humans) but sometimes all you need is a cuddly cat. Stay pawsitive! :)"
 
   print()
   print(output)
