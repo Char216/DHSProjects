@@ -14,17 +14,17 @@ while True:
   for each_word in list_of_words:
     
     if each_word == "Yes" or "yes":
-      feelings_list.append("yes")
-      encouragement_list.append("Are things just not going your way, meow?")
+      feelings_list.append("low")
+      encouragement_list.append("that no matter how bad things are, they will get better eventually. You're not alone and there are always people who care for you and whom you can turn to for help.")
       counter += 1
     if each_word == "No" or "no":
-      feelings_list.append("no")
-      encouragement_list.append("That's good, it means you're feeling alright! If you ever need encouragement, just ask meow!")
+      feelings_list.append("good")
+      encouragement_list.append("that if you ever need encouragement, just ask meow or look for someone who can help you!")
       counter += 1
 
   if counter == 0:
     
-      output = "Sorry I don't really understand. Please use different words?"
+      output = "Sorry, I don't really understand. Perhaps you could use different words?"
 
   elif counter == 1:
     
@@ -42,7 +42,7 @@ while True:
       encouragement += encouragement_list[i] + ", "
     encouragement += "and " + encouragement_list[-1]
 
-    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
+    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Life can be tough but sometimes all you need is a cuddly cat :)"
 
   print()
   print(output)
